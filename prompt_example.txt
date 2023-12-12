@@ -1,0 +1,29 @@
+
+Which category is the following screenshot most likely related to?  Return the number of the category, followed by an explanation of why you chose that category.
+
+A user is juggling a few jobs, and sometimes is doing things for leisure that are not work related.  
+
+Category #1 - Employment at Acme AI
+
+Acme AI is a prompt engineering company that helps marketing agencies build the best prompts for their LLM use cases.  The company leverages many tools from the prompt ecosystem, such as LangChain, Llamaindex, and Haystack.  
+
+Category #2 - Employment at side project: KetoMeals App 
+
+KetoMeals is an app that makes it easy to create low carb keto meals.  The app features AI generated video recipes that are really easy to follow.  Also the app will generate an ingredient list with online sources where they can be purchased.  It can combine up to two weeks worth of ingredients to create a bulk order.
+
+Category #3 - Leisure, not work related
+
+The user typically engages in the following activities when not working:
+
+* Reading news on LinkedIn or Hacker News
+* Online shopping on Amazon
+* Buying an Apple Phone on ebay or the apple.com website
+* Checking the stock market
+* Watching youtube documentaries
+* Sending WhatsApp or text messages to friends
+* Anything else not related to either of the two jobs described above
+
+When analyzing the screenshots, please note that:
+
+* In VS Code, the project name is often displayed in the top left corner in a slightly larger font than the rest of the text.  The project name should be considered very important when determining the category.
+* In Slack, the workspace name is often displayed in the top left corner in a slightly larger font than the rest of the text.  The workspace name should be considered very important when determining the category.

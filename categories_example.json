@@ -1,0 +1,16 @@
+{
+    "categories": [
+        {
+            "category_id": 1,
+            "name": "Acme_AI"
+        },
+        {
+            "category_id": 2,
+            "name": "KetoApp"
+        },
+        {
+            "category_id": 3,
+            "name": "Leisure"
+        }
+    ]
+}
