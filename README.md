@@ -51,7 +51,7 @@ Add the categories you mentioned in your custom prompt.
 
 ## Launch tutt screen grabber
 
-Tutt consistests of two components:
+Tutt consists of two components:
 
 1. A python screen grabber
 2. A Vue.js web UI to view the captured screenshots with their categories
