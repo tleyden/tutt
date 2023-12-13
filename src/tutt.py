@@ -1,7 +1,7 @@
 import time 
 import datetime 
 import os
-from extract_category import extract_category_llm_response, WorkCategory
+from extract_category import extract_category_llm_response
 import constants
 from dataset import add_dataset_entry
 from utils import find_most_recent_filename, grab_screenshot_to_timestamp_file, identical_to_latest_screenshot, image_is_blank
@@ -96,7 +96,9 @@ def main():
         exit(1)
     with open(os.path.join(project_root, "prompt.txt")) as f:
         prompt = f.read()
-        print(f"Prompt: {prompt}")
+
+    if not prompt:
+        raise Exception("You must set the prompt in the prompt.txt file")
 
     # Create the dataset root dir
     dataset_root = os.path.join(project_root,  "dataset")

@@ -1,6 +1,5 @@
 import os 
 import json 
-from extract_category import WorkCategory
 
 def read_dataset_entries(dataset_root: str) -> list:
     """
@@ -16,7 +15,7 @@ def read_dataset_entries(dataset_root: str) -> list:
 
     return dataset_metadata["entries"]
 
-def add_dataset_entry(dataset_root: str, screenshot_filename: str, category: WorkCategory, llm_response: str, capture_time_formatted: str) -> None:
+def add_dataset_entry(dataset_root: str, screenshot_filename: str, category: str, llm_response: str, capture_time_formatted: str) -> None:
     """
     Add a dataset entry to the dataset file
     """
@@ -39,8 +38,8 @@ def add_dataset_entry(dataset_root: str, screenshot_filename: str, category: Wor
     dataset_metadata["entries"].append({
         "capture_time_formatted": capture_time_formatted,
         "screenshot_filename": screenshot_filename,
-        "actual_category": category.name,
-        "expected_category": category.name,
+        "actual_category": category,
+        "expected_category": category,
         "llm_response": llm_response
     })
 

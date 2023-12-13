@@ -12,6 +12,6 @@ class CategoriesStorage():
 
     def find_category_for_index(self, index: int) -> str:
         for category in self.categories_db["categories"]:
-            if category["index"] == index:
+            if category["category_id"] == index:
                 return category["name"]
         return constants.CATEGORY_UNKNOWN

@@ -33,7 +33,7 @@ Category #1 - Employment at Acme AI
 Category #2 - Employment at side project: KetoMeals App 
 ```
 
-These category ids need to match the `category_id` fields in the `categories.json` file that you will create in the next step.
+You can add as many categories as you want, but these category ids need to match the `category_id` fields in the `categories.json` file that you will create in the next step.
 
 It's recommended to spend some time designing your prompt!  You will get much more accurate results if your prompt is good.
 
