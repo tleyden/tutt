@@ -15,7 +15,14 @@ It takes a snaphot of your screen every 5 minutes and sends it (along with your 
 
 ## System requirements 
 
-Anywhere that can run python and node.js
+Any system that can run python and node.js
+
+You will also need access to GPT-4.  According to the [OpenAI website](https://platform.openai.com/docs/guides/vision):
+
+> GPT-4 with vision is currently available to all developers who have access to GPT-4 via the gpt-4-vision-preview model and the Chat Completions API which has been updated to support image inputs.
+If you're a Pay-As-You-Go customer and you've made a successful payment of $1 or more, you'll be able to access the GPT-4 API (8k).
+
+
 
 ## Customize for your use case
 
@@ -49,7 +56,7 @@ cp categories_example.json categories.json
 
 Add the categories you mentioned in your custom prompt.
 
-## Launch tutt screen grabber
+## Launch TUTT screen grabber
 
 Tutt consists of two components:
 
