@@ -67,7 +67,7 @@ def grab_and_record(dataset_root: str, prompt: str, categories_storage: Categori
     print(f"Category: {category}")
 
     # Slugify the category
-    category_slug = category.name.lower().replace(" ", "_").replace("-", "_")
+    category_slug = category.lower().replace(" ", "_").replace("-", "_")
 
     # Rename the screenshot file to include the category
     screenshot_filename_basename = os.path.basename(screenshot_filename_fq_path)

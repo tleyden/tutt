@@ -2,7 +2,11 @@ TUTT (The Ultimate Time Tracker) is a prototype time tracker that uses the OpenA
 
 It takes a snaphot of your screen every 5 minutes and sends it (along with your prompt) to the OpenAI Vision API to find the category, then it saves it in a local database along with the screenshot.  The web UI displays your recent categorized work.
 
-<screenshots>
+| | |
+|---|---|
+|List of time tracking events | Details of time tracking event|
+|  ![Screenshot 2023-12-13 at 2 00 48 PM](https://github.com/tleyden/tutt/assets/296876/6eb41f46-049e-465d-a69d-8bcb2e2f852c) |  ![Screenshot 2023-12-13 at 2 01 09 PM](https://github.com/tleyden/tutt/assets/296876/e35801c1-f283-4dca-a24e-c960f7210a3a)  |
+
 
 **Caveats**
 
@@ -103,9 +107,3 @@ npm install
 
 It will display the localhost address that you can view in a browser.
 
-## TODO
-
-- add screenshots to readme
-- test on a clean box
-- share private repo with friends to test the instructions
-- share with the internet

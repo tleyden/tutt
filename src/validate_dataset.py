@@ -44,10 +44,10 @@ def validate_dataset(dataset_root: str):
         category = extract_category_llm_response(llm_response)
 
         # Compare to expected category
-        if category.name == expected_category:
+        if category == expected_category:
             correct_classifications += 1
         else:
-            print(f"Expected {expected_category}, got {category.name} for image {screenshot_filename}")
+            print(f"Expected {expected_category}, got {category} for image {screenshot_filename}")
 
         total_classifications += 1
 
