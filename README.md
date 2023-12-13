@@ -34,14 +34,14 @@ cp prompt_example.txt prompt.txt
 
 and customize `prompt.txt` to fit your use case.  
 
-The categories listed in the prompt must be formatted with category numbers, as is done in the example prompt:
+The categories listed in the prompt must be formatted with category numbers like `Category #<num>`, as is done in the example prompt:
 
 ```
-Category #1 - Employment at Acme AI
+Category #1 - <title of category 1>
 
 ... 
 
-Category #2 - Employment at side project: KetoMeals App 
+Category #2 - <title of category 2>
 ```
 
 You can add as many categories as you want, but these category ids need to match the `category_id` fields in the `categories.json` file that you will create in the next step.
@@ -55,6 +55,9 @@ cp categories_example.json categories.json
 ```
 
 Add the categories you mentioned in your custom prompt.
+
+The category ids need to match the `category_id` fields in the `categories.json` file, and the category names should be concise.
+
 
 ## Launch TUTT screen grabber
 
