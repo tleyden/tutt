@@ -42,6 +42,11 @@ This should already be installed, run `python --version` or `python3 --version` 
 brew install node
 ```
 
+It has been tested with:
+
+* nodejs version v18.16.0
+* npm version 9.5.1
+
 ## Customize TUTT for your use case
 
 ### Create a custom prompt
