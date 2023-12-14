@@ -15,7 +15,7 @@ It takes a snaphot of your screen every 5 minutes and sends it (along with your 
 
 ## System requirements 
 
-Any system that can run python and node.js
+Only works on OSX, due to [quickgrab](https://github.com/akrabat/QuickGrab/tree/update) dependency.
 
 You will also need access to GPT-4.  According to the [OpenAI website](https://platform.openai.com/docs/guides/vision):
 
@@ -23,8 +23,26 @@ You will also need access to GPT-4.  According to the [OpenAI website](https://p
 If you're a Pay-As-You-Go customer and you've made a successful payment of $1 or more, you'll be able to access the GPT-4 API (8k).
 
 
+## Install prerequisite packages
 
-## Customize for your use case
+### Quickgrab screenshot capture
+
+```
+git clone https://github.com/akrabat/QuickGrab.git
+cp QuickGrab/quickgrab /usr/local/bin
+```
+
+### Python3
+
+This should already be installed, run `python --version` or `python3 --version` to double check.  If not, you can install it with brew.
+
+### NodeJS
+
+```
+brew install node
+```
+
+## Customize TUTT for your use case
 
 ### Create a custom prompt
 
@@ -70,7 +88,17 @@ This section walks you through getting the python screen grabber running.
 
 You can run it in the background with `tmux` or similar.
 
-### Step 1: Create a conda env or virtualenv
+
+### Step 1 (optional): Create a conda env or virtualenv
+
+To isolate your python dependencies and avoid any potential dependency conflicts, you can create and activate a virtual environment:
+
+```
+python3 -m venv tutt
+source tutt/bin/activate
+```
+
+or with conda:
 
 ```
 conda create --name tutt python=3.11
@@ -94,6 +122,7 @@ export OPENAI_API_KEY=<your OPENAI API key>
 ### Step 4: Run TUTT screen grabber loop
 
 ```
+cd src
 python tutt.py
 ```
 
