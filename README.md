@@ -1,6 +1,8 @@
-TUTT (The Ultimate Time Tracker) is a prototype time tracker that uses the OpenAI Vision and your prompt engineering skills to accurately categorize what you're doing on your computer.
+TUTT (The Ultimate Time Tracker) is a prototype time tracker that sends screenshots to the OpenAI Vision API to categorize what you're doing on your computer.  
 
-It takes a snaphot of your screen every 5 minutes and sends it (along with your prompt) to the OpenAI Vision API to find the category, then it saves it in a local database along with the screenshot.  The web UI displays your recent categorized work.
+With a good prompt that describes your normal activities, the result can be quite accurate.
+
+Here's what the web UI looks like when displaying your recently categorized activities.
 
 | | |
 |---|---|
@@ -11,7 +13,7 @@ It takes a snaphot of your screen every 5 minutes and sends it (along with your 
 **Caveats**
 
 * This is just a proof of concept and is very unpolished.  If you're interested in actually using it, give the repo a ⭐!
-* Cost is approximately $1/day with the default settings.  If you are interested in Llava open source model support, file an issue.
+* Cost is approximately $1/day with the default settings.  If you are interested in support for running a Llava open source model instead, feel free to file an issue.
 * Since your screenshots are being sent to OpenAI, **there are a lot of security and privacy risks with this app, only use it if you understand those risks**.  Note that the data is not sent anywhere else besides OpenAI.
 
 ## System requirements 
@@ -50,9 +52,13 @@ It has been tested with:
 * nodejs version v18.16.0
 * npm version 9.5.1
 
-## Customize TUTT for your use case
+## Customize TUTT for your use case (required)
+
+The example prompt and categories won't give any meaningful results, so you will need to create a custom prompt and corresponding categories.  It should only take a few minutes.
 
 ### Create a custom prompt
+
+Copy the example prompt with:
 
 ```
 cp prompt_example.txt prompt.txt
