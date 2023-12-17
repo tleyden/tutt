@@ -24,6 +24,7 @@ def invoke_openai_api(screenshot_filename, prompt) -> str:
         "Authorization": f"Bearer {api_key}"
     }
 
+    # maybe specify temperature?
     payload = {
         "model": "gpt-4-vision-preview",
         "messages": [
