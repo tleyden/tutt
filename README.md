@@ -10,7 +10,7 @@ It takes a snaphot of your screen every 5 minutes and sends it (along with your 
 
 **Caveats**
 
-* This is just a proof of concept and is very unpolished.  If you're interested in actually using it, give the repo a :star!
+* This is just a proof of concept and is very unpolished.  If you're interested in actually using it, give the repo a ⭐!
 * Cost is approximately $1/day with the default settings.  If you are interested in Llava open source model support, file an issue.
 * Since your screenshots are being sent to OpenAI, **there are a lot of security and privacy risks with this app, only use it if you understand those risks**.  Note that the data is not sent anywhere else besides OpenAI.
 
