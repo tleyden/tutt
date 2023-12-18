@@ -12,8 +12,8 @@ Here's what the web UI looks like when displaying your recently categorized acti
 
 **Caveats**
 
-* This is just a proof of concept and is very unpolished.  If you're interested in actually using it, give the repo a ⭐!
-* Cost is approximately $1/day with the default settings.  If you are interested in support for running a Llava open source model instead, feel free to file an issue.
+* This is just a proof of concept and is very unpolished.  Give the repo a ⭐ if you're interested in a polished version.
+* Cost is approximately $1/day with the default settings.  Open an issue if you are interested in support for running a Llava open source model.
 * Since your screenshots are being sent to OpenAI, **there are a lot of security and privacy risks with this app, only use it if you understand those risks**.  Note that the data is not sent anywhere else besides OpenAI.
 
 ## System requirements 
