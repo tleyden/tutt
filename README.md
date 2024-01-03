@@ -16,15 +16,15 @@ I need to track billable hours for freelance work, and I want a tool that requir
 
 ## Caveats (why you shouldn't use this)
 
-* This is just a proof of concept and is very unpolished.  Give the repo a ⭐ if you're interested in a polished version.
+* This is just a proof of concept and is very unpolished.  But if you're interested in a polished version, smash that ⭐ icon!
 * The OpenAI API costs are approximately $1/day with the default settings.  Open an issue if you are interested in support for running a Llava open source model.
-* Since your screenshots are being sent to OpenAI, **there are a lot of security and privacy risks with this app, only use it if you understand those risks**.  Note that the data is not sent anywhere else besides OpenAI.
+* Since your screenshots are being sent to OpenAI, **there are a lot of security and privacy risks with this app**.  You should **only use it if you understand those risks**.  Note that the data is not sent anywhere else besides OpenAI.
 
 ## System requirements 
 
 Only works on OSX, due to the [quickgrab](https://github.com/akrabat/QuickGrab/tree/update) dependency.
 
-You will also need access to GPT-4.  According to the [OpenAI website](https://platform.openai.com/docs/guides/vision):
+You will also need access to GPT-4, since at the time of writing this readme, according to the [OpenAI website](https://platform.openai.com/docs/guides/vision):
 
 > GPT-4 with vision is currently available to all developers who have access to GPT-4 via the gpt-4-vision-preview model and the Chat Completions API which has been updated to support image inputs.
 If you're a Pay-As-You-Go customer and you've made a successful payment of $1 or more, you'll be able to access the GPT-4 API (8k).
