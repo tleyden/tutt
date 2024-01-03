@@ -10,7 +10,13 @@ Here's what the web UI looks like when displaying your recently categorized acti
 |  ![Screenshot 2023-12-13 at 2 00 48 PM](https://github.com/tleyden/tutt/assets/296876/6eb41f46-049e-465d-a69d-8bcb2e2f852c) |  ![Screenshot 2023-12-13 at 2 01 09 PM](https://github.com/tleyden/tutt/assets/296876/e35801c1-f283-4dca-a24e-c960f7210a3a)  |
 
 
-**Caveats**
+## Why this was created
+
+I need to track billable hours for freelance work, and I want a tool that requires the least amount of effort.  The best app I could find was [Timely App](https://timelyapp.com/), but their auto-categorization AI wasn't accurate enough, so even that app requires manual effort to categorize the hours.
+
+With the new wave of multimodal vision models, I think something much more accurate can be created.  
+
+## Caveats 
 
 * This is just a proof of concept and is very unpolished.  Give the repo a ⭐ if you're interested in a polished version.
 * Cost is approximately $1/day with the default settings.  Open an issue if you are interested in support for running a Llava open source model.
@@ -160,3 +166,12 @@ npm install
 
 It will display the localhost address that you can view in a browser.
 
+
+## Roadmap
+
+None yet, but if you are interested in this app, give the repo a star and I will try to put some more time into building this into an actual product!  Feel free to file issues for any improvements you'd like to see.
+
+
+## Related projects
+
+* [REM - An open source approach to locally record and enable searching everything you view on your Apple Silicon.](https://github.com/jasonjmcghee/rem)
