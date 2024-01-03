@@ -50,7 +50,8 @@ def invoke_openai_api(screenshot_filename, prompt) -> str:
     response = requests.post(
         "https://api.openai.com/v1/chat/completions", 
         headers=headers, 
-        json=payload
+        json=payload,
+        timeout=30
     )
 
     response_json = response.json()
