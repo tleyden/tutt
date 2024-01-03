@@ -1,6 +1,6 @@
 TUTT (The Ultimate Time Tracker) is a prototype time tracker that sends screenshots to the OpenAI Vision API to categorize what you're doing on your computer.  
 
-With a good prompt that describes your normal activities, the result can be quite accurate.
+If you create a good prompt that describes your normal activities, the result can be quite accurate.
 
 Here's what the web UI looks like when displaying your recently categorized activities.
 
@@ -10,13 +10,11 @@ Here's what the web UI looks like when displaying your recently categorized acti
 |  ![Screenshot 2023-12-13 at 2 00 48 PM](https://github.com/tleyden/tutt/assets/296876/6eb41f46-049e-465d-a69d-8bcb2e2f852c) |  ![Screenshot 2023-12-13 at 2 01 09 PM](https://github.com/tleyden/tutt/assets/296876/e35801c1-f283-4dca-a24e-c960f7210a3a)  |
 
 
-## Why this was created
+## Why I created this
 
-I need to track billable hours for freelance work, and I want a tool that requires the least amount of effort.  The best app I could find was [Timely App](https://timelyapp.com/), but their auto-categorization AI wasn't accurate enough, so even that app requires manual effort to categorize the hours.
+I need to track billable hours for freelance work, and I want a tool that requires the least amount of effort.  The best app I could find was [Timely App](https://timelyapp.com/), but I feel their auto-categorization feature isn't accurate enough for my needs and I still need to put in manual effort to categorize the hours.
 
-With the new wave of multimodal vision models, I think something much more accurate can be created.  
-
-## Caveats 
+## Caveats (why you shouldn't use this)
 
 * This is just a proof of concept and is very unpolished.  Give the repo a ⭐ if you're interested in a polished version.
 * The OpenAI API costs are approximately $1/day with the default settings.  Open an issue if you are interested in support for running a Llava open source model.
@@ -24,7 +22,7 @@ With the new wave of multimodal vision models, I think something much more accur
 
 ## System requirements 
 
-Only works on OSX, due to [quickgrab](https://github.com/akrabat/QuickGrab/tree/update) dependency.
+Only works on OSX, due to the [quickgrab](https://github.com/akrabat/QuickGrab/tree/update) dependency.
 
 You will also need access to GPT-4.  According to the [OpenAI website](https://platform.openai.com/docs/guides/vision):
 
@@ -58,13 +56,13 @@ It has been tested with:
 * nodejs version v18.16.0
 * npm version 9.5.1
 
-## Customize TUTT for your use case (required)
+## Customize TUTT for your use case (or else it won't work)
 
-The example prompt and categories won't give any meaningful results, so you will need to create a custom prompt and corresponding categories.  It should only take a few minutes.
+The [example prompt](prompt_example.txt) and [example categories](categories_example.json) won't give any meaningful results, so you will need to create a custom prompt and corresponding categories.  It should only take a few minutes.
 
 ### Create a custom prompt
 
-Copy the example prompt with:
+Copy the example prompt:
 
 ```
 cp prompt_example.txt prompt.txt
@@ -86,7 +84,7 @@ You can add as many categories as you want, but these category ids need to match
 
 It's recommended to spend some time designing your prompt!  You will get much more accurate results if your prompt is good.
 
-### Create custom categories that match prompt
+### Create custom categories that match prompt (or else it won't work)
 
 ```
 cp categories_example.json categories.json
@@ -148,7 +146,6 @@ python tutt.py
 
 You can run it in the background with `tmux` or similar.  When your machine restarts, you will have to manually restart the script.
 
-
 ## Launch TUTT web UI
 
 ### Step 1: NPM install (one time only)
@@ -169,9 +166,10 @@ It will display the localhost address that you can view in a browser.
 
 ## Roadmap
 
-None yet, but if you are interested in this app, give the repo a star and I will try to put some more time into building this into an actual product!  Feel free to file issues for any improvements you'd like to see.
+None yet, but if you are interested in this app, give the repo a star and I will try to put some more time into building this into a usable app!  Feel free to file issues for any improvements you'd like to see.
 
 
-## Related projects
+## Related open source projects
 
 * [REM - An open source approach to locally record and enable searching everything you view on your Apple Silicon.](https://github.com/jasonjmcghee/rem)
+* [ActivityWatch - Open source time tracker](https://activitywatch.net/)
