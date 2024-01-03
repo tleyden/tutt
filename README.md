@@ -2,7 +2,7 @@ TUTT (The Ultimate Time Tracker) is a prototype time tracker that sends screensh
 
 If you create a good prompt that describes your normal activities, the result can be quite accurate.
 
-Here's what the web UI looks like when displaying your recently categorized activities.
+Here's how the UI might look like if your day job is at Acme.ai, you're working on a food app idea called "Keto App" as a side project, and sometimes you get sucked into Twitter or Instagram that is completely unrelated to anything.
 
 | | |
 |---|---|
