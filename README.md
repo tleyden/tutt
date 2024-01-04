@@ -168,5 +168,5 @@ None yet, but if you are interested in this app, give the repo a star and I will
 
 ## Related open source projects
 
-* [REM - An open source approach to locally record and enable searching everything you view on your Apple Silicon.](https://github.com/jasonjmcghee/rem)
-* [ActivityWatch - Open source time tracker](https://activitywatch.net/)
+* [rem](https://github.com/jasonjmcghee/rem) - an open source approach to locally record and enable searching everything you view on your Apple Silicon.
+* [ActivityWatch](https://activitywatch.net/) - open source time tracker.
