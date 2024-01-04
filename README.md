@@ -22,9 +22,8 @@ I need to track billable hours for freelance work, and I want a tool that requir
 
 ## System requirements 
 
-Only works on OSX, due to the [quickgrab](https://github.com/akrabat/QuickGrab/tree/update) dependency.
-
-You will also need access to GPT-4, since at the time of writing this readme, according to the [OpenAI website](https://platform.openai.com/docs/guides/vision):
+1. **OSX** - this only works on OSX, due to the [quickgrab](https://github.com/akrabat/QuickGrab/tree/update) dependency.
+2. **GPT4 access** - At the time of writing this readme, according to the [OpenAI website](https://platform.openai.com/docs/guides/vision):
 
 > GPT-4 with vision is currently available to all developers who have access to GPT-4 via the gpt-4-vision-preview model and the Chat Completions API which has been updated to support image inputs.
 If you're a Pay-As-You-Go customer and you've made a successful payment of $1 or more, you'll be able to access the GPT-4 API (8k).
@@ -32,9 +31,7 @@ If you're a Pay-As-You-Go customer and you've made a successful payment of $1 or
 
 ## Install prerequisite packages
 
-### Quickgrab screenshot capture
-
-This works on OSX only.
+### Quickgrab screenshot capture (OSX only)
 
 ```
 git clone https://github.com/akrabat/QuickGrab.git
