@@ -16,7 +16,7 @@ I need to track billable hours for freelance work, and I want a tool that requir
 
 ## Caveats (why you shouldn't use this)
 
-* This is just a proof of concept and is very unpolished.  But if you're interested in a polished version, smash that ⭐ icon!
+* This is just a proof of concept and is very unpolished.  But if you're interested in a polished version, give the repo a ⭐!
 * The OpenAI API costs are approximately $1/day with the default settings.  Open an issue if you are interested in support for running a Llava open source model.
 * Since your screenshots are being sent to OpenAI, **there are a lot of security and privacy risks with this app**.  You should **only use it if you understand those risks**.  Note that the data is not sent anywhere else besides OpenAI.
 
